@@ -1,0 +1,24 @@
+:host {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: auto minmax(auto, 1fr) auto;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "t t t"
+    ". c .";
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.top-bar {
+  grid-area: t;
+}
+
+.content {
+  grid-area: c;
+}
